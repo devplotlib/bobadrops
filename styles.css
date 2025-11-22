@@ -41,6 +41,82 @@ h3{
 .footer-content{
     background-color: #f3e5f5;
     border: 1px solid #ab47bc;
-    height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    height: 32px; 
     padding: 8px;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(255, 108, 54);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: teal;
+  color: white;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.container {
+    text-align: center;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.tile {
+    height: 140px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.15s ease;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
 }
